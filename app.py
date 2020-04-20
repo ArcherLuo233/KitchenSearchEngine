@@ -25,6 +25,7 @@ app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 
 db = SQLAlchemy(app)
 from user_controller import login, register, getUserInfo, save_user_search_record
+from Item_to_Item import getrecommendItem
 
 
 @app.route('/')
@@ -42,24 +43,26 @@ def search():
     from_set=int(from_set)
     print(" keyword",keyword)
     body = {
-  "query":{
-    "multi_match":{
-      "query":keyword,
-      "fields":["name","materials.material_name","tags_dist.tag_name","description"],
+        "query":{
+                "multi_match":{
+                                "query":keyword,
+                                "fields":["name","materials.material_name","tags_dist.tag_name","description"],
+                                 },
 
-    },
-
-  },
+                },
         "size": 10,
         "from": from_set,
 
-}
+    }
     # 查询name="python"的所有数据
     res = es.search(index="recipe*", body=body)
+    targe_id=res['hits']['hits'][0]['_id']
+    recommend=getrecommendItem(targe_id)
     data={
         "code":200,
         "msg":"搜索成功",
-        "data":res['hits']
+        "data":res['hits'],
+        "recommend":recommend
     }
     return jsonify(data)
 @app.route('/recommend',methods=['POST','GET'])
@@ -89,7 +92,7 @@ def recmmend_():
 @app.route('/login', methods=['POST'])
 def login_():
     username = request.form.get("username")
-    password = request.form.get('password')
+    password = request.form.get("password")
     state=login(username,password)
     if state==-1:
         res = {"code": 400,
@@ -126,5 +129,7 @@ def get_user_info():
     res=getUserInfo(username)
 
     return  jsonify(res)
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=8081)
