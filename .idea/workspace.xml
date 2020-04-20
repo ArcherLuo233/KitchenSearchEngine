@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f07d4753-fed2-455e-bdcd-60a72cd31819" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Item_to_Item.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/R_T.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/KitchenSearchEngine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KitchenSearchEngine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,12 +126,24 @@
       <workItem from="1586241022622" duration="849000" />
       <workItem from="1586414045034" duration="745000" />
       <workItem from="1587355083520" duration="935000" />
-      <workItem from="1587356043948" duration="14604000" />
+      <workItem from="1587356043948" duration="14868000" />
     </task>
+    <task id="LOCAL-00001" summary="物品的推荐">
+      <created>1587388851121</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587388851121</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="物品的推荐" />
+    <option name="LAST_COMMIT_MESSAGE" value="物品的推荐" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="142" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587386017651">
@@ -150,6 +151,10 @@
     </state>
     <state x="275" y="142" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1587386017651" />
     <state x="344" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1586170912493" />
+    <state x="372" y="3" width="1131" height="818" key="CommitChangelistDialog2" timestamp="1587388849834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="372" y="3" width="1131" height="818" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587388849834" />
     <state width="1493" height="296" key="GridCell.Tab.0.bottom" timestamp="1587387054633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
